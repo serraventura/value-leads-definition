@@ -35,36 +35,86 @@
        - **Credit Restrictions: Free:** Adjusted value = R$0
 
 
+### **Definitions**
+#### Full Details with at Least One Document Photo (value: 250)
+
+Required Fields: All "Full Details" fields: userIncome, userDeposit, familyIncome, familyArrangement, regionsOfInterest, civilStatus, employmentStatus, userIncomeType, userDependents
+At least one document photo attached.
+
+#### Full Details with More Than One Document Provided (value: 220)
+
+Required Fields: All "Full Details" fields
+cpf: Must be provided by text, plus one document attached.
+
+#### Full Details with at Least One Document Provided (value: 200)
+
+Required Fields: All "Full Details" fields
+cpf: Must be provided by text.
+
+#### Full Details (value: 180)
+
+Required Fields: All "Full Details" fields, no documents required.
+
+#### Intermediate Details (value: 100)
+
+Required Fields:
+At least the following fields: userIncome or familyIncome, civilStatus, employmentStatus, userIncomeType, and regionsOfInterest.
+
+#### Minimal Details (value: 50)
+
+Required Fields: At least one of the "Full Details" fields.
+
+#### Credit Restrictions (value: 0)
+To be defined
+
 Data examples:
 
 ```
 {
-  "data": [
-    {
-      "id": "lead1",
-      "fullName": "John ***",
-      "createdAt": "2024-08-15T10:00:00Z",
-      "userIncome": "R$5,000",
-      "userDeposit": "R$20,000",
-      "familyIncome": "R$7,000",
-      "familyArrangement": "married",
-      "userNeighborhood": "zona sul",
-      "userWishedNeighborhood": "centro",
-      "leadValue": 225
-    },
-    {
-      "id": "lead2",
-      "fullName": "Jane ****",
-      "createdAt": "2024-08-14T14:30:00Z",
-      "userIncome": "R$3,000",
-      "userDeposit": "R$10,000",
-      "familyIncome": "R$4,000",
-      "familyArrangement": "single",
-      "userNeighborhood": "centro",
-      "userWishedNeighborhood": "norte",
-      "leadValue": 180
-    }
-  ]
+   "data":[
+      {
+         "id":"lead1",
+         "fullName":"Carlos Souza",
+         "createdAt":"2024-09-01T12:00:00Z",
+         "userIncome":"R$6,000",
+         "userDeposit":"R$15,000",
+         "familyIncome":"R$8,000",
+         "familyArrangement":"casado",
+         "userNeighborhood":"zona sul",
+         "userRegion":"zona_sul",
+         "cpf":"123.456.789-00",
+         "civilStatus":"casado(a)",
+         "employmentStatus":"empregado",
+         "userIncomeType":"carteira assinada",
+         "userDependents":"2 filhos(as)",
+         "hasDocumentAttached":false,
+         "hasCpfDocumentAttached":false,
+         "hasPayslipDocumentAttached":false,
+         "hasBankStatementDocumentAttached":false,
+         "leadValue":200
+      },
+      {
+         "id":"lead2",
+         "fullName":"Ana Silva",
+         "createdAt":"2024-09-10T10:45:00Z",
+         "userIncome":"R$4,000",
+         "userDeposit":"R$10,000",
+         "familyIncome":null,
+         "familyArrangement":null,
+         "userNeighborhood":"zona norte",
+         "userRegion":"zona_norte",
+         "cpf":null,
+         "civilStatus":"solteiro(a)",
+         "employmentStatus":"empregado",
+         "userIncomeType":"autonomo",
+         "userDependents":"nao possui dependentes",
+         "hasDocumentAttached":false,
+         "hasCpfDocumentAttached":false,
+         "hasPayslipDocumentAttached":false,
+         "hasBankStatementDocumentAttached":false,
+         "leadValue":100
+      }
+   ]
 }
 ```
 
