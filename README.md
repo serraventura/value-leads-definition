@@ -35,37 +35,37 @@
        - **Credit Restrictions: Free:** Adjusted value = R$0
 
 
-### **Definitions**
+### **Category Definitions**
+
+For every category "Full Details" will mean: `userIncome, userDeposit, familyIncome, familyArrangement, regionsOfInterest, civilStatus, employmentStatus, userIncomeType and userDependents`.
+
 #### Full Details with at Least One Document Photo (value: 250)
 
-Required Fields: All "Full Details" fields: userIncome, userDeposit, familyIncome, familyArrangement, regionsOfInterest, civilStatus, employmentStatus, userIncomeType, userDependents
-At least one document photo attached.
+**Required Fields**: All "Full Details" + At least one document photo attached.
 
 #### Full Details with More Than One Document Provided (value: 220)
 
-Required Fields: All "Full Details" fields
-cpf: Must be provided by text, plus one document attached.
+**Required Fields**: All "Full Details" + "cpf" by text + plus one document attached.
 
 #### Full Details with at Least One Document Provided (value: 200)
 
-Required Fields: All "Full Details" fields
-cpf: Must be provided by text.
+**Required Fields**: All "Full Details" + "cpf" by text
 
 #### Full Details (value: 180)
 
-Required Fields: All "Full Details" fields, no documents required.
+**Required Fields**: All "Full Details" + no documents required.
 
 #### Intermediate Details (value: 100)
 
-Required Fields:
-At least the following fields: userIncome or familyIncome, civilStatus, employmentStatus, userIncomeType, and regionsOfInterest.
+**Required Fields:**
+At least the following fields: `userIncome or familyIncome, civilStatus, employmentStatus, userIncomeType, and regionsOfInterest`.
 
 #### Minimal Details (value: 50)
 
-Required Fields: At least one of the "Full Details" fields.
+**Required Fields:** At least one of the "Full Details" fields.
 
 #### Credit Restrictions (value: 0)
-To be defined
+> To be defined
 
 Data examples:
 
